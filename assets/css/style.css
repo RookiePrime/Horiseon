@@ -1,3 +1,5 @@
+/* General style + universal selectors starts here */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,8 +9,8 @@
 
 body {
     background-color: #d9dcd6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 
 a {
     text-decoration: none;
@@ -18,10 +20,15 @@ p {
     font-size: 16px;
 }
 
+.formal-font {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* General style + universal selectors ends here */
+
 /* Header + hero style starts here */
 
 header {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -43,8 +50,8 @@ header nav {
 }
 
 header nav ul {
+    max-width: 60%;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 20px;
     list-style-type: none;
     display: flex;
@@ -90,15 +97,10 @@ main {
     margin-left: 25px;
 }
 
-.content article .on-left {
-    margin-right: 25px;
-}
-
 .content article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
 }
 
@@ -113,28 +115,26 @@ main {
 
 /* Search engine blurb style ends here */
 
-
 /* Benefits style starts here */
 
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-.benefits article {
+aside article {
     margin-bottom: 32px;
 }
 
-.benefits article h3 {
+aside article h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefits article img {
+aside article img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -146,7 +146,6 @@ main {
 
 footer {
     padding: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
