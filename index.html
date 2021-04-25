@@ -23,17 +23,19 @@
                 </li>
             </ul>
         </nav>
-        <!-- The hero -->
+        <!-- The hero. No alt text necessary, it's a background image. -->
         <div class="hero"></div>
     </header>
 
-    <!-- The content starts here -->
+    <!-- The content starts here. -->
     <main>
         <!-- The main content starts here -->
         <section class="content">
-    
+            <!-- Everything is flexboxed into neat little articles, and the articles are themselves flexboxes for an img container and the text; the img tags now have alt text for the benefit of screen readers -->
             <article id="search-engine-optimization">
-                <img src="./assets/images/search-engine-optimization.jpg" alt="A sketchbook on a desk, open to a page full of ways to improve Search Engine Optimization" />
+                <div class="img-content">
+                    <img src="./assets/images/search-engine-optimization.jpg" alt="A sketchbook on a desk, open to a page full of ways to improve Search Engine Optimization" />
+                </div>
                 <div class="text-content on-right">
                     <h2>Search Engine Optimization</h2>
                     <p>
@@ -49,11 +51,15 @@
                         The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
                     </p>
                 </div>
-                <img src="./assets/images/online-reputation-management.jpg" alt="A laptop in use, displaying a bar graph indicating increased reputation over time" class="on-right"/>
+                <div class="img-content on-right">
+                    <img src="./assets/images/online-reputation-management.jpg" alt="A laptop in use, displaying a bar graph indicating increased reputation over time" />
+                </div>
             </article>
             
             <article id="social-media-marketing">
-                <img src="./assets/images/social-media-marketing.jpg" alt="A table of people collaborating; the table is covered in laptops, tablets, and icons of social media imagery" />
+                <div class="img-content">
+                    <img src="./assets/images/social-media-marketing.jpg" alt="A table of people collaborating; the table is covered in laptops, tablets, and icons of social media imagery" />
+                </div>
                 <div class="text-content on-right">
                     <h2>Social Media Marketing</h2>
                     <p>
@@ -66,6 +72,7 @@
     
         <!-- The aside content starts here -->
         <aside>
+            <!-- The articles in here follow a simpler formula than the ones in the section above. -->
             <article>
                 <h3>Lead Generation</h3>
                 <img src="./assets/images/lead-generation.png" alt="" />

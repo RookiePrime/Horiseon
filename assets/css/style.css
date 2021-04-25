@@ -1,4 +1,4 @@
-/* General style + universal selectors starts here */
+/* General style + universal selectors starts here. Did some fiddling with the universal and body selectors to save some repetition. The color declaration being universal is because the browser-default supersedes the body selector, but not the universal selector. So I colour all the text white with one stroke, and then change the footer text black to align with the previous design. */
 
 * {
     box-sizing: border-box;
@@ -20,13 +20,15 @@ p {
     font-size: 16px;
 }
 
+/* Decided to use a universal selector for these fonts. Seemed a little more efficient than individually assigning font-family to a few things. */
+
 .formal-font {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* General style + universal selectors ends here */
 
-/* Header + hero style starts here */
+/* Header + hero style starts here. I removed as much of the redundant selector calls as I could, as well as redundant declarations with the selectors that are used. */
 
 header {
     display: flex;
@@ -81,7 +83,6 @@ main {
 
 .content {
     width: 75%;
-    margin-left: 20px;
 }
 
 .content article {
@@ -102,10 +103,17 @@ main {
     padding: 50px;
     height: 300px;
     background-color: #0072bb;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content .img-content {
+    height: 200px;
+    width: auto;
 }
 
 .content img {
-    max-height: 200px;
+    height: 100%;
 }
 
 .content h2 {
@@ -118,7 +126,6 @@ main {
 /* Benefits style starts here */
 
 aside {
-    margin-right: 20px;
     padding: 20px;
     width: 20%;
     height: 100%;
@@ -160,11 +167,11 @@ footer p {
 
 /* Footer style ends here */
 
-/* Responsive style starts here */
+/* Responsive style starts here. The headers were too big for small devices or viewports */
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
-    /* Respnosive main content style starts here */
+    /* Responsive main content style starts here */
 
     .content h2 {
         font-size: 24px;
